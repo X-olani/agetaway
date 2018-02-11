@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+      <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title></title>
+  </head>
+  <body style='background-color:#93d8d2'>
+    <nav class='center' >
+      <div  style='width:122%;'>
+      <h4 id='home'class='float-left colorHeader center'>Home</h4>
+        <h4 id='about' class="float-left colorHeader center">About</h4>
+      </div>
+    </nav>
+
+<header>
+ <div  class='tophead'style='width:122%;'class="">
+
+ </div>
+ <br>
+ <br>
+ <div id='hermanus'class="textcolor float-right">
+  <h1 class='colorHeader'>Hermanus</h1>
+  <h2 class='colorHeader'>Get away home</h2>
+   <button >Book now</button>
+ </div>
+</header>
+
+<div style='height:340px;' class="heightChange">
+  <div  class="inforDiv">
+    <h4>infor</h4>
+    <p>This magnificent  holiday luxury home with wraparound views
+      of the sea and mountain is the perfect family getaway.</p>
+    <h4>House included </h4>
+    <ul>
+      <li>4 bedrooms</li>
+      <li> 3 bathrooms</li>
+      <li>Pool</li>
+    </ul>
+ </div>
+ <div class="imageSize float-right">
+   <img id='houseImage'class='imageSize float-right'src="images/luxury-large-holiday-home-to-rent-camps-bay-cape-town-1-61.jpg" alt="">
+   <img id='livingRoom'class="imageSize"src="images/luxury-large-holiday-home-to-rent-camps-bay-cape-town-1-91.jpg" alt="">
+ </div>
+</div>
+
+<div class="grayDiv ">
+  <div id='threeDiv'class="float-left  divinfo">
+    <h3>History</h3>
+    <p>Hermanus Pieters (ca.1778–1837) was a Dutch teacher who arrived in Cape Town in 1815.
+   He was recruited by Dutch-speaking farmers who disliked that English was the only language used in all government schools.
+   He settled in Caledon, but taught Dutch to farmers in a wide area around that town,
+   including the Hemel-en-Aarde Valley</p>
+  </div>
+  <div id='threeDiv'class="float-left divinfo">
+     <h3>Climate</h3>
+     <p>Hermanus is classified as having a warm-summer Mediterranean climate (Köppen).
+    [4] It receives 520mm of rain per annum, the majority of which falls during the winter months of June to August in the form of frontal precipitation.
+    Average midday temperatures range from 25 °C in February to 16 °C in July.</p>
+  </div>
+  <div id='threeDiv' class="float-left">
+    <h3>Beaches</h3>
+    <p>Grotto Beach is the largest beach in Hermanus and has also been proclaimed a "Blue Flag" beach.
+   Blue flag beaches meet international Environment,
+    Safety and Management criteria.</p>
+  </div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+$("#home").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".tophead").offset().top},
+        'slow');
+      });
+
+      $("#about").click(function() {
+          $('html,body').animate({
+              scrollTop: $(".grayDiv").offset().top},
+              'slow');
+            });
+
+    });
+
+</script>
+</html>
